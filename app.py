@@ -17,14 +17,14 @@ class LoginWindow(QWidget):
     def init_ui(self):
         self.setWindowTitle('Habit Buddy - Login')
         self.setGeometry(100, 100, 600, 400)
-        self.setFixedSize(1200, 800)
+        self.setFixedSize(1500, 1000)
 
         # Background image
         self.background_label = QLabel(self)
         pixmap = QPixmap('background.jpeg')  # Ensure you have 'background.jpg' in the same directory or provide the correct path
         self.background_label.setPixmap(pixmap)
         self.background_label.setScaledContents(True)
-        self.background_label.resize(1200, 800)
+        self.background_label.resize(1500, 1000)
 
         # Transparent overlay widget for form
         self.overlay = QWidget(self)
